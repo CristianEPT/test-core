@@ -7,7 +7,7 @@ Esta es una API REST para generar secuencias FizzBuzz.
 - [Instalación](#instalación)
 - [Uso](#uso)
 - [Endpoints](#endpoints)
-- [Base de datos](#Configuración de Base de Datos)
+- [Base de datos](#Database)
 - [Autor](#Autor)
 
 ## Introducción
@@ -36,7 +36,7 @@ La API FizzBuzz proporciona los siguientes endpoints:
 
 Consulta la documentación de la API para obtener información detallada sobre cómo utilizar estos endpoints.
 
-## Configuración de Base de Datos
+## Database
 
 Las configuraciones de la base de datos se encuentran en el archivo `properties.yml`. Asegúrate de proporcionar las configuraciones correctas antes de ejecutar la aplicación.
 
