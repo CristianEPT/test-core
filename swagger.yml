@@ -1,0 +1,95 @@
+openapi: 3.0.3
+info:
+  title: Swagger FizzBuzz - Intraway
+  description: |-
+    Esta es la documentación de las API desarrollada para Intraway
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: apiteam@swagger.io
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.11
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io
+servers:
+  - url: http://localhost:8080
+tags:
+  - name: FizzBuzz
+    externalDocs:
+      description: Fizz Buzz Process
+      url: http://swagger.io
+paths:
+  /intraway/api/fizzbuzz/{min_number}/{max_number}:
+    get:
+      tags:
+        - FizzBuzz
+      summary: get call chats
+      parameters:
+        - name: min_number
+          in: path
+          description: Min number to process by Fizz Buzz
+          required: true
+          schema:
+            type: string
+        - name: max_number
+          in: path
+          description: Max number to process by Fizz Buzz
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FizzBuzzResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
+
+components:
+  schemas:
+    FizzBuzzResponse:
+      type: object
+      properties:
+        timestamp:
+          type: integer
+          format: int64
+          example: 1687056919351
+        code:
+          type: string
+          example: "004"
+        description:
+          type: string
+          example: "no se encontraron múltiplos de ninguno"
+        list:
+          type: string
+          example: "1,2"
+    BadRequest:
+      type: object
+      properties:
+        timestamp:
+          type: integer
+          format: int64
+          example: 1522850457762
+        status:
+          type: integer
+          example: 400
+        error:
+          type: string
+          example: "Bad Request"
+        exception:
+          type: string
+          example: "com.intraway.exceptions.badrequest"
+        message:
+          type: string
+          example: "Los parámetros enviados son incorrectos"
+        path:
+          type: string
+          example: "/intraway/api/fizzbuzz/5/-2"
