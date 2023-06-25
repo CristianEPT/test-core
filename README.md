@@ -30,6 +30,8 @@ Una vez que la API esté en funcionamiento, puedes enviar solicitudes HTTP a los
 
 ## Endpoints
 
+El swagger de la api lo encontrara aqui [swagger.yml](#swagger.yml)
+
 La API FizzBuzz proporciona los siguientes endpoints:
 
 - `GET /intraway/api/fizzbuzz/{min}/{max}`: Genera la secuencia FizzBuzz para el rango dado.
