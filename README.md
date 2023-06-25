@@ -30,7 +30,7 @@ Una vez que la API esté en funcionamiento, puedes enviar solicitudes HTTP a los
 
 ## Endpoints
 
-El swagger de la api lo encontrara aqui [swagger.yml](#swagger.yml)
+El swagger de la api lo encontrara aqui [swagger.yml](test-core/swagger.yml)
 
 La API FizzBuzz proporciona los siguientes endpoints:
 
