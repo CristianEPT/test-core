@@ -22,7 +22,7 @@ Para ejecutar la API FizzBuzz, sigue estos pasos:
 2. Navega al directorio del proyecto: `cd fizzbuzz-api`
 3. Ejecuta el docker-compose `docker-compose up -d`
 4. Construye el proyecto: `gradle clean build`
-5. Ejecuta la aplicación: `java -jar target/fizzbuzz-api.jar`
+5. Ejecuta la aplicación: `java -jar build/libs/test-core-0.0.1-SNAPSHOT.jar`
 
 ## Uso
 
