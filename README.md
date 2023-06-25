@@ -18,10 +18,10 @@ La API FizzBuzz te permite generar secuencias FizzBuzz basadas en el rango de en
 
 Para ejecutar la API FizzBuzz, sigue estos pasos:
 
-1. Clona el repositorio: `git clone https://github.com/tu-usuario/fizzbuzz-api.git`
+1. Clona el repositorio: `git clone https://github.com/CristianEPT/fizzbuzz-api.git`
 2. Navega al directorio del proyecto: `cd fizzbuzz-api`
 3. Ejecuta el docker-compose `docker-compose up -d`
-4. Construye el proyecto: `mvn clean install`
+4. Construye el proyecto: `gradle clean build`
 5. Ejecuta la aplicación: `java -jar target/fizzbuzz-api.jar`
 
 ## Uso
